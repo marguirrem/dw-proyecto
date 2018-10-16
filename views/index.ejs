@@ -8,8 +8,8 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-  
- 
+    <p style="color:red;"><%= message %></p>
+
     <div class="container">
 
 		<div class="card col-md-8" style="margin:0 auto;" >
@@ -18,14 +18,14 @@
 		  </div>
 		  	<form method="post" action="/login">
 			  <div class="form-group">
-			    <label for="exampleInputPassword1">Código:</label>
-			    <input type="text" class="form-control" name="codigo" placeholder="Codigo..." style="font-size:30px;text-align:center;">
+			    <label for="name">Código:</label>
+			    <input type="text" required class="form-control" name="codigo" placeholder="Codigo..." style="font-size:30px;text-align:center;">
 			  </div>
 			  <button type="submit" class="btn btn-primary btn-lg form-control">Entrar</button><br><br>
 			</form>
 		</div>
-    	
+
     </div>
-    
+
   </body>
 </html>
